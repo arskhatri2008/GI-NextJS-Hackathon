@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------------- NAVBAR ----------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.navbar .head {
+  display: flex;
+  /* justify-content: space-between;
+  align-items: center; */
+  gap: 2rem;
+}
+
+.navbar .icons {
+  display: flex;
+  /* justify-content: space-between;
+  align-items: center; */
+  gap: 2rem;
+}
+
+/* ---------------------- HERO SECTION ----------------------------------- */
+.heroImage {
+  /* width: 50rem;
+  height: 63rem; */
+}
+
+.heroText {
+  width: 34rem;
+  /* height: 16rem; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 6px;
+  padding: 4rem;
+  line-height: 2rem;
+}
+
+.heroText h6 {
+  font-weight: bold;
+}
+
+.heroText h3 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #b88e2f;
+}
+
+/* .heroText p{
+  line-height: none;
+} */
+
+.heroText .buyBtn {
+  background-color: #b88e2f;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  color: white;
+}
+
+/* ---------------------------- SUB TEXT ---------------------------- */
+.subText {
+  text-align: center;
+}
+.subText h3 {
+  color: #292826;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.imgArea{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+
+}
+.imgArea h6{
+  text-align: center;
+  font-weight: bold;
+}
+
+/* -------------------cardsss -------------------------------- */
+
+.cardsContainer{
+  
+    display: grid;
+    /* grid-template-columns: ; */
+    grid-template-columns:  repeat(4, 1fr);    
+    gap: 0.1rem; 
+    padding: 20px; 
+    justify-items: center;
+
+    /* display: flex; */
+}
+
+
+.productBtn{
+  align-self: center;
+}
+
+.slideSection{
+  display: grid;
+  /* grid-template-columns: ; */
+  grid-template-columns:  repeat(3, 1fr);    
+  /* gap: 0;  */
+  padding: 2rem; 
+  justify-items: center;
+  /* align-items: center; */
+}
+
+
+/* ------------------------------ SHOP Routing------------------------------------------- */
+
+
+.shopsect h3, .shopPara{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+.shopsect .shopPara{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  gap: 1rem;
+}
+
+.footer input{
+  /* border: none; */
+  outline: none;
+
+}
+
+
+footer hr {
+  margin: auto;
+  margin-top: 15px;
+  width: 1000px;
+}
+
+footer .para p{
+  font-weight: 400;
+  position: absolute;
+  left: 13%;
+  padding: 2rem 0rem;
+}
