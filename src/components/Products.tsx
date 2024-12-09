@@ -149,8 +149,15 @@ const Products = [
   }
 ];
 
+interface Product {
+  id: number;
+  name: string;
+  price: string;
+  image: string;
+  category: string;
+}
 
-const ProductCard = ({ Product }) => (
+const ProductCard = ({ Product }:{Product:Product}) => (
   <div className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
     <div className="relative overflow-hidden">
       <img 

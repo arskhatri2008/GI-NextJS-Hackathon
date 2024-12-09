@@ -20,9 +20,10 @@ const cartItems = [
 ];
 
 const CartPage = () => {
-  const [items, setItems] = useState(cartItems);
+  const [items, setItems] = useState([...cartItems]);
+  const updateQuantity = (id: number , newQuantity: number) => {
     console.log("items: ",items)
-  const updateQuantity = (id, newQuantity) => {
+    if(newQuantity < 0) return;
     setItems(items.map(item => 
       item.id === id 
         ? { ...item, quantity: Math.max(0, newQuantity) } 
